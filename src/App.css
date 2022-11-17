@@ -25,7 +25,8 @@ small {
   color: rgb(137, 132, 132);
 }
 
-i {
+
+.listIcons {
 
   margin: 1.5rem 1rem 0 0;
   font-size: 1.4rem;
@@ -33,7 +34,7 @@ i {
   transition: 0.2s ease;
 }
 
-i:hover {
+.listIcons:hover {
   color: yellowgreen;
   transform: scale(1.2);
 }
@@ -71,6 +72,13 @@ i:hover {
   box-shadow: 0px 0.3px 3px 1px rgb(199, 199, 199);
 }
 
+.mainHeading {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: green;
+  width: max-content;
+}
+
 .container {
   width: 50%;
   display: flex;
@@ -105,4 +113,92 @@ i:hover {
   font-weight: 600;
   box-shadow: 0px 0.3px 3px 1px rgb(234, 234, 234);
   color: rgb(15, 188, 15);
+}
+
+/* ---------- Modal ----------- */
+
+.modalBackground {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: 25vw;
+}
+
+.modalContainer {
+  box-shadow: 0px 0.3px 3px 1px rgb(234, 234, 234);
+  position: relative;
+  border-radius: 4px;
+  padding: 3rem;
+}
+
+.crossBtn {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  font-size: 1.8rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+  color: green;
+}
+
+.crossBtn:hover {
+  color: red;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: green;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0.3px 3px 1px rgb(199, 199, 199);
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0.3px 3px 1px rgb(199, 199, 199);
+}
+
+.modalBody {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeading {
+  color: green;
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.modalInputs {
+  margin: 5px 0;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 0.87rem;
+  background-color: #9e9a9a;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+}
+
+.modalInputs::placeholder {
+  color: rgb(211, 209, 209);
+}
+
+.modalInputs:focus {
+  transform: scale(1.02);
+}
+
+.footerModal {
+  display: flex;
+  justify-content: space-between;
 }
